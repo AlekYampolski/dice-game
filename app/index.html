@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="temp/styles/app.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+                <h1>Dice game</h1>
+        </header>
+        <div class="row">
+           <div class="row__medium-4">
+               <div class="player player--0 player--active">
+                   <h2 class="player__name ">Player1</h2>
+                   <div class="player__score player__score--0">0    </div>
+               </div>
+           </div>
+           <div class="row__medium-4">
+               <div class="results">
+                   <table id="results" class="mDice-1">
+                       <tr class="top">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                       </tr>
+                       <tr class="middle">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                       </tr>
+                       <tr class="bot">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                       </tr>
+                   </table>
+                   <div class="results__tablo">0</div>
+                   <a href="#" class="btn btn--dice">dice</a>
+                   <a href="#" class="btn btn--hold">hold</a>
+               </div>
+                
+           </div>
+           <div class="row__medium-4">
+               <div class="player player--1">
+                   <h2 class="player__name">
+                       Player2
+                   </h2>
+                   <div class="player__score player__score--1">
+                       0    
+                   </div>
+               </div>
+           </div>
+        </div>
+    </div>
+    <script src='temp/js/app.js'></script>
+</body>
+</html>

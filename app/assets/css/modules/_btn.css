@@ -1,0 +1,15 @@
+.btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.2em;
+    border: 2px red solid;
+    display: block;
+    text-align: center;
+    font-weight: 900;
+    color: #ddd;
+    background: $mainRed;
+
+    &:hover {
+        color: #aaa;
+    }
+}

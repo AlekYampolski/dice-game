@@ -1,0 +1,121 @@
+body {
+    background-color:green;
+}
+h1 {
+    text-align: center; 
+}
+.wrapper {
+    min-width: 600px;
+    margin: 0 auto;
+    background: red;
+    max-width: 800px;
+}
+.row::after {
+        content: "";
+        clear: both;
+        display:  table;
+    }
+.row__medium-4 {
+        float: left;
+        width: 33%;
+
+    }
+.btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.2em;
+    border: 2px red solid;
+    display: block;
+    text-align: center;
+    font-weight: 900;
+    color: #ddd;
+    background: #e74c3c;
+}
+.btn:hover {
+        color: #aaa;
+    }
+.results {
+    width: 75%;
+    margin: 0 auto;
+
+    /* td:nth-child(2) {
+        background-color: white;
+      
+    } */
+}
+.results__tablo {
+        width: 100%;
+        text-align: center;
+        font-size: 3em;
+    }
+.results table, .results th, .results td {
+        border: 1px solid white;
+        
+        background: white;
+    }
+.results td {
+        padding: 5px;
+        /* background: black; */
+        border-radius: 100%;
+    }
+.mDice-1 .middle td:nth-child(2){
+        background: black;
+    }
+.mDice-2 .top td:nth-child(3) {
+        background-color: black;
+    }
+.mDice-2 .bot td:nth-child(1) {
+        background-color: black;
+    }
+.mDice-3 .top td:nth-child(1) {
+        background-color: black;
+    }
+.mDice-3 .middle td:nth-child(2) {
+        background-color: black;
+    }
+.mDice-3 .bot td:nth-child(3) {
+        background-color: black;
+    }
+.mDice-4 .top td:nth-child(odd) {
+        background-color: black;
+    }
+.mDice-4 .bot td:nth-child(odd) {
+        background-color: black;
+    }
+.mDice-5 .top td:nth-child(odd) {
+        background-color: black;
+    }
+.mDice-5 .middle td:nth-child(even) {
+        background-color: black;
+    }
+.mDice-5 .bot td:nth-child(odd) {
+        background-color: black;
+    }
+.mDice-6 .top td:nth-child(odd) {
+        background-color: black;
+    }
+.mDice-6 .middle td:nth-child(odd) {
+        background-color: black;
+    }
+.mDice-6 .bot td:nth-child(odd) {
+        background-color: black;
+    }
+.player {
+
+    /* background-color: aqua; */
+    padding: 2em;
+    
+}
+.player__score {
+        font-size: 4em;
+        background-color: orange;
+    }
+.player--0 {
+        text-align: right;
+    }
+.player--1 {
+        text-align: left;
+    }
+.player--active {
+        background: blue;
+    }

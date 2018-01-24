@@ -1,0 +1,16 @@
+.row {
+
+    
+    &::after {
+        content: "";
+        clear: both;
+        display:  table;
+    }
+
+    &__medium-4 {
+        float: left;
+        width: 33%;
+
+    }
+
+}
