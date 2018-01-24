@@ -1,64 +1,56 @@
 .results {
-    width: 75%;
-    margin: 0 auto;
-    &__tablo {
-        width: 100%;
-        text-align: center;
-        font-size: 3em;
-    }
+  width: 75%;
+  margin: 0 auto;
+  &__tablo {
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+  }
 
+  table,
+  th,
+  td {
+    /* border: 1px solid white; */
+    background: white;
+  }
+  td {
+    padding: 0.45em;
+    border-radius: 100%;
+  }
+}
 
-    table, th, td {
-        border: 1px solid white;
-        
-        background: white;
-    }
-    td {
-        padding: 5px;
-        /* background: black; */
-        border-radius: 100%;
-    }
-
-    /* td:nth-child(2) {
-        background-color: white;
-      
-    } */
+#dice {
+  margin: 0 auto;
 }
 
 .mDice-1 {
-    .middle td:nth-child(2){
-        background: black;
-    }
+  @mixin mDot middle, 2;
 }
 
-
-
-
-
 .mDice-2 {
-    @mixin mDot top, 3;
-    @mixin mDot bot, 1;
+  @mixin mDot top, 3;
+  @mixin mDot bot, 1;
 }
 
 .mDice-3 {
-    @mixin mDot top, 1;
-    @mixin mDot middle, 2;
-    @mixin mDot bot, 3;
+  @mixin mDot top, 1;
+  @mixin mDot middle, 2;
+  @mixin mDot bot, 3;
 }
 
 .mDice-4 {
-    @mixin mDot top, odd;
-    @mixin mDot bot, odd;
+  @mixin mDot top, odd;
+  @mixin mDot bot, odd;
 }
 
 .mDice-5 {
-    @mixin mDot top, odd;
-    @mixin mDot middle, even;
-    @mixin mDot bot, odd;
+  @mixin mDot top, odd;
+  @mixin mDot middle, even;
+  @mixin mDot bot, odd;
 }
 
 .mDice-6 {
-    @mixin mDot top, odd;
-    @mixin mDot middle, odd;
-    @mixin mDot bot, odd;
+  @mixin mDot top, odd;
+  @mixin mDot middle, odd;
+  @mixin mDot bot, odd;
 }

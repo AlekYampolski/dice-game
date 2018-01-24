@@ -2,14 +2,18 @@
     text-decoration: none;
     text-transform: uppercase;
     padding: 1.2em;
-    border: 2px red solid;
+    border: 2px #fff solid;
     display: block;
     text-align: center;
     font-weight: 900;
     color: #ddd;
     background: $mainRed;
-
+    margin: 0.2em;
     &:hover {
-        color: #aaa;
+        color: #222;
+        background: #ec9591;
+    }
+    &:active {
+        background: #e6adab;
     }
 }

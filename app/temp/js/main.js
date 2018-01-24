@@ -56,11 +56,11 @@ document.querySelector(playerSelector + '0').textContent = 2;
 
 
 clearData();
-var classList = document.getElementById('results').classList;
+var classList = document.getElementById('dice').classList;
 while (classList.length > 0) {
     classList.remove(classList.item(0));
 }
-console.log(document.getElementById('results'));
+console.log(document.getElementById('dice'));
 //Action for button .btn--dice
 document.querySelector('.btn--dice').addEventListener('click', function(){
     dice = Math.floor(Math.random()*6  + 1);
@@ -81,8 +81,8 @@ document.querySelector('.btn--dice').addEventListener('click', function(){
         classList.remove(classList.item(0));
      }
  */
-    document.getElementById('results').classList.remove(classList.item(0));
-    document.getElementById('results').classList.add('mDice-'+dice);
+    document.getElementById('dice').classList.remove(classList.item(0));
+    document.getElementById('dice').classList.add('mDice-'+dice);
 
 });
 

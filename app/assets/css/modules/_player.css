@@ -1,21 +1,25 @@
 .player {
+    width: 120px;
 
     /* background-color: aqua; */
     padding: 2em;
     &__score {
         font-size: 4em;
-        background-color: orange;
     }
     &--0 {
-        text-align: right;
+        text-align: center;
+        float: right;
     }
 
     &--1 {
-        text-align: left;
+        text-align: center;
+        float: left;
     }
 
     &--active {
-        background: blue;
+        background: #eee;
+        border: 2px solid #fff;
+
     }
     
 }
